@@ -16,6 +16,19 @@
     animation: marquee 20s linear infinite;
   }
   
+  @keyframes marquee-fast {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee-fast {
+    display: flex;
+    animation: marquee-fast 6s linear infinite;
+  }
 
   .scrollbar-hide::-webkit-scrollbar {
     display: none;

@@ -26,6 +26,8 @@ export default {
       iccardpurple: "#bdb0ed",
       iccardpink: "#ff7c70",
       iccardgreen: "#51ac90",
+      iclightdark: "#e0e0d6",
+      iclight: "#f5f5ed",
     },
   },
   plugins: [],

@@ -16,7 +16,7 @@ const Card = ({ title, description, image, bgColor }) => {
   );
 };
 
-export default function Services({ arrow_right }) {
+export default function Services({ arrow_right, sweb, serpcrm, suiux, smobile}) {
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {
@@ -25,6 +25,8 @@ export default function Services({ arrow_right }) {
     }
   };
 
+  console.warn(sweb)
+
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({ left: 320, behavior: "smooth" });
@@ -32,12 +34,12 @@ export default function Services({ arrow_right }) {
   };
 
   const cards = [
-    { title: "Web Development", description: "Build seamless, high-performance web applications.", image: "https://cdn.prod.website-files.com/66f80993567d675bb21536a3/673343441734f7d225ad7af3_Hands%20Show.png", bgColor: "bg-iccardpink" },
-    { title: "Mobile Applications", description: "Develop innovative mobile apps.", image: "https://cdn.prod.website-files.com/66f80993567d675bb21536a3/673343441734f7d225ad7af3_Hands%20Show.png", bgColor: "bg-iccardyellow" },
-    { title: "ERP & CRM Solutions", description: "Streamline operations and improve customer relations.", image: "https://cdn.prod.website-files.com/66f80993567d675bb21536a3/673343441734f7d225ad7af3_Hands%20Show.png", bgColor: "bg-iccardpurple" },
-    { title: "Branding & Design", description: "Craft a unique and memorable identity.", image: "https://cdn.prod.website-files.com/66f80993567d675bb21536a3/673343441734f7d225ad7af3_Hands%20Show.png", bgColor: "bg-iccardgreen" },
+    { title: "Web Development", description: "Build seamless, high-performance web applications.", image: sweb, bgColor: "bg-iccardpink" },
+    { title: "Mobile Applications", description: "Develop innovative mobile apps.", image: smobile, bgColor: "bg-iccardyellow" },
+    { title: "ERP & CRM Solutions", description: "Streamline operations and improve customer relations.", image: serpcrm, bgColor: "bg-iccardpurple" },
+    { title: "Branding & Design", description: "Craft a unique and memorable identity.", image: suiux, bgColor: "bg-iccardgreen" },
     { title: "Packaging Design", description: "Create compelling and unique packaging.", image: "https://cdn.prod.website-files.com/66f80993567d675bb21536a3/673343441734f7d225ad7af3_Hands%20Show.png", bgColor: "bg-iccardpink" },
-    { title: "UI/UX Design", description: "User-centric designs for intuitive experiences.", image: "https://cdn.prod.website-files.com/66f80993567d675bb21536a3/673343441734f7d225ad7af3_Hands%20Show.png", bgColor: "bg-iccardyellow" },
+    { title: "UI/UX Design", description: "User-centric designs for intuitive experiences.", image: suiux, bgColor: "bg-iccardyellow" },
   ];
 
   return (

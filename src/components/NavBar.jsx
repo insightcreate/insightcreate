@@ -7,21 +7,21 @@ const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <nav className="bg-icdark shadow-md">
+    <nav className="bg-iclightdark shadow-md">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo and Name */}
           <div className="flex items-center">
-            <img src={logodark} alt="Insight Create" className="h-8" />
+            <img src={logo} alt="Insight Create" className="h-8" />
 {/*             <span className="text-2xl font-normal text-icblack ml-2">Insight Create</span> */}
           </div>
 
           {/* Navigation Items for Large Screens */}
           <div className="hidden md:flex lg:space-x-10 md:space-x-1">
-            <a href="#" className="text-icwhite hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Home</a>
-            <a href="#" className="text-icwhite hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Services</a>
-            <a href="#" className="text-icwhite hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">About Us</a>
-            <a href="#" className="text-icwhite hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Contact Us</a>
+            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Home</a>
+            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Services</a>
+            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">About Us</a>
+            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Contact Us</a>
           </div>
 
           {/* Hamburger Icon for Mobile */}
@@ -59,7 +59,7 @@ const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
       </div>
 
       {/* Mobile View: Hamburger Menu */}
-      <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-icwhite px-4 py-2`}>
+      <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-iclightdark px-4 py-2`}>
         <a href="#" className="text-icblack block px-3 py-2 rounded-md text-xl font-normal">Home</a>
         <a href="#" className="text-icblack block px-3 py-2 rounded-md text-xl font-normal">Services</a>
         <a href="#" className="text-icblack block px-3 py-2 rounded-md text-xl font-normal">About Us</a>

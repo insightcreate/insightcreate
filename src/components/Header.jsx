@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Header = ({ arrow_right }) => {
+const Header = ({ arrow_right, headerimage }) => {
 
   useEffect(() => {
     // Select all letters and add animation class
@@ -22,10 +22,10 @@ const Header = ({ arrow_right }) => {
   };
 
   return (
-    // <div className="relative flex flex-col items-center text-center lg:py-48 py-32 px-4 bg-icwhite">
-       <div className="relative flex flex-col items-center text-center lg:py-48 py-32 px-4 bg-gradient-to-br from-icthemepink via-50% via-icthemeblue to-icyellow">
+    <div className="relative flex flex-col items-center text-center lg:py-34 md:py-28 py-4 px-4 bg-iclightdark">
+      {/* //  <div className="relative flex flex-col items-center text-center lg:py-48 py-32 px-4 bg-gradient-to-br from-icthemepink via-50% via-icthemeblue to-icyellow"> */}
       {/* Text with Animation */}
-      <h1 className="lg:text-8xl md:text-5xl text-2xl font-bold text-icblack">
+      <h1 className="lg:text-8xl md:text-5xl text-5xl font-bold text-icblack">
         {splitText("Empowering Your Vision")}
       </h1>
 
@@ -47,6 +47,7 @@ const Header = ({ arrow_right }) => {
         </button>
       </div>
     </div>
+    
   );
 };
 

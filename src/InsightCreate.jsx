@@ -11,7 +11,6 @@ import copy from './assets/copy.svg'
 import NavBar from './components/NavBar';
 import Header from './components/Header';
 import join from './assets/join.svg'
-// import TreeLikeDesign from './components/TreeLikeDesign';
 import JoinCreatorTeam from './components/JoinCreatorTeam';
 import Technologies from './components/Technologies';
 import SalesCard from './components/SalesCard';
@@ -44,7 +43,15 @@ import ReactJS from "./assets/tech/react.svg";
 import SpringBoot from "./assets/tech/springboot.svg";
 import Tailwind from "./assets/tech/tailwind.svg";
 import Thymeleaf from "./assets/tech/thymeleaf.svg";
-import Services from './components/Services'
+import Services from './components/Services';
+
+import sweb from './assets/services/web.svg';
+import smobile from './assets/services/smobile.svg';
+import serpcrm from './assets/services/serpcrm.svg';
+import suiux from './assets/services/suiux.svg';
+import TagLine from './components/TagLine';
+
+import headerimage from './assets/headerimg.svg';
 
 function InsightCreate() {
     const socialIcons = { Instagram, WhatsApp, Facebook, Linkedin, X, Medium, Dev, GitHub };
@@ -72,9 +79,9 @@ function InsightCreate() {
   return (
     <div className='font-poppins'>
       <NavBar logodark={logodark} logo={appLogo} whatsapp={whatsapp} arrow_right={arrow_right}/>
-      <Header arrow_right={arrow_right}/>
-      {/* <TreeLikeDesign /> */}
-      <Services arrow_right={arrow_right}/>
+      <Header arrow_right={arrow_right} headerimage={headerimage}/>
+      <TagLine />
+      <Services arrow_right={arrow_right} sweb={sweb} smobile={smobile} serpcrm={serpcrm} suiux={suiux}/>
       <Technologies techIcons={techIcons}/>
       <SalesCard whatsapp={whatsapp} email={email} call={call} arrow_right={arrow_right}/>
       <JoinCreatorTeam join={join}/>
