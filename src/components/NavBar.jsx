@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +19,10 @@ const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
 
           {/* Navigation Items for Large Screens */}
           <div className="hidden md:flex lg:space-x-10 md:space-x-1">
-            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Home</a>
-            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Services</a>
-            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">About Us</a>
-            <a href="#" className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Contact Us</a>
+            <Link to={''} className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Home</Link>
+            <Link to={'services'} className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Services</Link>
+            <Link to={'about'} className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">About Us</Link>
+            <Link to={'contact'} className="text-icblack hover:animate-pulse px-3 py-2 rounded-md text-xl font-normal">Contact Us</Link>
           </div>
 
           {/* Hamburger Icon for Mobile */}
@@ -59,7 +60,7 @@ const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
       </div>
 
       {/* Mobile View: Hamburger Menu */}
-      <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-iclightdark px-4 py-2`}>
+      <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"} bg-icwhite px-4 py-2`}>
         <a href="#" className="text-icblack block px-3 py-2 rounded-md text-xl font-normal">Home</a>
         <a href="#" className="text-icblack block px-3 py-2 rounded-md text-xl font-normal">Services</a>
         <a href="#" className="text-icblack block px-3 py-2 rounded-md text-xl font-normal">About Us</a>

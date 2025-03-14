@@ -1,7 +1,8 @@
 const SalesCard = ({whatsapp, arrow_right, email, call}) => {
   return (
-    
-    <div className="bg-iccardpurple mx-auto m-10 rounded-3xl p-10 flex flex-col lg:flex-row justify-between items-center w-full max-w-5xl">
+    // <div className="bg-iccardpurple mx-auto m-10 rounded-3xl p-10 flex flex-col lg:flex-row justify-between items-center w-full max-w-5xl">
+    <div className="bg-iccardpurple">
+      <div className="mx-auto flex md:p-2 lg:p-10 lg:px-60 p-10 flex-col md:flex-row justify-between items-center w-full">
       {/* Left Content */}
       <div className="text-left">
         <h2 className="lg:text-5xl text-3xl font-normal text-icblack">Ready to Elevate Your Business?</h2>
@@ -29,6 +30,7 @@ const SalesCard = ({whatsapp, arrow_right, email, call}) => {
               <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
               Call us
         </button>
+      </div>
       </div>
     </div>
   );

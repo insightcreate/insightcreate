@@ -52,6 +52,7 @@ import suiux from './assets/services/suiux.svg';
 import TagLine from './components/TagLine';
 
 import headerimage from './assets/headerimg.svg';
+import { motion } from "framer-motion";
 
 function InsightCreate() {
     const socialIcons = { Instagram, WhatsApp, Facebook, Linkedin, X, Medium, Dev, GitHub };
@@ -76,17 +77,42 @@ function InsightCreate() {
         Thymeleaf,
       };
 
+      
+const containerVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
   return (
-    <div className='font-poppins'>
-      <NavBar logodark={logodark} logo={appLogo} whatsapp={whatsapp} arrow_right={arrow_right}/>
-      <Header arrow_right={arrow_right} headerimage={headerimage}/>
+    <>
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <Header arrow_right={arrow_right} headerimage={headerimage} />
+    </motion.div>
+
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
       <TagLine />
-      <Services arrow_right={arrow_right} sweb={sweb} smobile={smobile} serpcrm={serpcrm} suiux={suiux}/>
-      <Technologies techIcons={techIcons}/>
-      <SalesCard whatsapp={whatsapp} email={email} call={call} arrow_right={arrow_right}/>
-      <JoinCreatorTeam join={join}/>
-      <Footer logodark={logodark} logo={appLogo} socialIcons={socialIcons} whatsapp={whatsapp} email={email} call={call} arrow_right={arrow_right} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/>
-    </div>
+    </motion.div>
+
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <Services arrow_right={arrow_right} sweb={sweb} smobile={smobile} serpcrm={serpcrm} suiux={suiux} />
+    </motion.div>
+
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <Technologies techIcons={techIcons} />
+    </motion.div>
+
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <SalesCard whatsapp={whatsapp} email={email} call={call} arrow_right={arrow_right} />
+    </motion.div>
+
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <JoinCreatorTeam join={join} />
+    </motion.div>
+
+    <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <Footer logodark={logodark} logo={appLogo} socialIcons={socialIcons} whatsapp={whatsapp} email={email} call={call} arrow_right={arrow_right} insightcreate={insightcreate} insight={insight} create={create} copy={copy} />
+    </motion.div>
+    </>
   )
 }
 

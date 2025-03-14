@@ -26,7 +26,8 @@ const Header = ({ arrow_right, headerimage }) => {
       {/* //  <div className="relative flex flex-col items-center text-center lg:py-48 py-32 px-4 bg-gradient-to-br from-icthemepink via-50% via-icthemeblue to-icyellow"> */}
       {/* Text with Animation */}
       <h1 className="lg:text-8xl md:text-5xl text-5xl font-bold text-icblack">
-        {splitText("Empowering Your Vision")}
+        {/* {splitText("Empowering Your Vision")} */}
+        Empowering Your <span className="text-iccardpink">Vision</span>
       </h1>
 
       <p className="text-icblack text-2xl mt-4 max-w-2xl z-10 relative">
