@@ -26,7 +26,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
 
   return (
     <>
-    <div className="relative flex flex-col items-center text-center lg:py-34 md:py-28 py-12 px-6 bg-iccardpink">
+    <div className="relative flex flex-col items-center text-center lg:py-10 md:py-28 py-12 px-6 bg-iccardpink">
       {/* Title */}
       <h1 className="lg:text-8xl md:text-5xl text-4xl font-bold text-icblack">
         Elevate with <span className="text-iccardgreen">Excellence</span>
@@ -44,7 +44,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
     </div>
 
     {/* Contact Form */}
-    <div className="mt-8 w-full flex flex-col items-center text-center">
+    <div className="bg-iclightdark md:p-10 pt-10 pb-10 w-full flex flex-col items-center text-center">
     <form onSubmit={handleSubmit} className="space-y-4">
       {/* Name Field */}
       <div className="relative">
@@ -53,7 +53,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className="peer w-full lg:max-w-96 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-iccardpurple placeholder-transparent"
+          className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
           placeholder="Your Name"
           required
         />
@@ -66,7 +66,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="peer w-full p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-iccardpurple placeholder-transparent"
+          className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
           placeholder="Your Email"
         />
       </div>
@@ -78,7 +78,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
           name="phone"
           value={formData.phpne}
           onChange={handleChange}
-          className="peer w-full p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-iccardpurple placeholder-transparent"
+          className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
           placeholder="Your phone"
           required
         />
@@ -91,7 +91,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
           value={formData.message}
           onChange={handleChange}
           rows="4"
-          className="peer w-full p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-iccardpurple placeholder-transparent"
+          className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
           placeholder="Your Message"
           required
         />
@@ -105,7 +105,7 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
         Send Message
       </button>
     </form>
-  </div>
+  
 
 
   <p className="text-icblack font-bold text-xl md:text-xl mt-4 max-w-2xl z-10 relative">
@@ -113,21 +113,20 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
      simply want to connect.
   </p>
   
-
-  Buttons
   <div className="md:flex md:space-x-6 mt-6 text-3xl text-icwhite z-10 relative">
     <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
     <img src={email} alt="Insight Create Email" className="h-4 w-4 mr-2" />
-      Email us
+      contact@insightcreate.com
     </button>
     <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
     <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
-      Call us
+      +91 8485846179
     </button>
     <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
     <img src={whatsapp} alt="Insight Create Whatsapp" className="h-4 w-4 mr-2" />
         WhatsApp us
     </button>
+  </div>
   </div>
   </>
   );
