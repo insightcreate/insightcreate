@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcreate, insight, create, copy, socialIcons}) => {
     return (
       <footer className="bg-icdark text-icwhite py-8">
@@ -34,11 +36,10 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
             <div>
               <h3 className="font-semibold mb-2 text-xl">Company</h3>
               <ul className="space-y-2">
-                <li>About us</li>
-                <li>Our mission</li>
-                <li>Contact us</li>
+                <li><Link to={'/about'}>About us</Link></li>
+                {/* <li>Our mission</li> */}
+                <li><Link to={'/contact'}>Contact us</Link></li>
                 <li>Hire us</li>
-                <li>Join us</li>
               </ul>
             </div>
             <div>
@@ -46,7 +47,7 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
               <ul className="space-y-2">
                 <li>Terms of Use</li>
                 <li>Privacy Policy</li>
-                <li>Developer Policies</li>
+                {/* <li>Developer Policies</li> */}
               </ul>
             </div>
           </div>

@@ -1,7 +1,17 @@
 import { useState, useEffect } from "react";
+import JoinCreatorTeam from "./JoinCreatorTeam";
+import Footer from "./Footer";
 
-const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
-  useEffect(() => {
+const Contact = ({ join, arrow_right, logodark, logo, whatsapp, email, call, socialIcons, insightcreate, insight, create, copy }) => {
+  
+    useEffect(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }, []);      
+  
+    useEffect(() => {
     const letters = document.querySelectorAll(".falling-letter");
     letters.forEach((letter, index) => {
       letter.style.animationDelay = `${index * 0.1}s`;
@@ -24,27 +34,34 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
     setFormData({ name: "", email: "", message: "" });
   };
 
+  const buttonStyle =
+    "bg-icblack min-w-60 md:m-0 m-4 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden";
+
   return (
     <>
-    <div className="relative flex flex-col items-center text-center lg:py-10 md:py-28 py-12 px-6 bg-iccardpink">
-      {/* Title */}
-      <h1 className="lg:text-8xl md:text-5xl text-4xl font-bold text-icblack">
-        Elevate with <span className="text-iccardgreen">Excellence</span>
-      </h1>
+    <div className="relative flex flex-col items-center text-center lg:py-10 md:py-10 py-6 px-6 bg-iccardpink">
+  {/* Breadcrumb (Aligned Left) */}
+  <div className="w-full max-w-7xl mx-auto">
+    <p className="text-icblack text-sm text-left">Home / <span className="font-bold">Contact</span></p>
+  </div>
 
-      {/* Subtitle */}
-      <p className="text-icblack text-sm md:text-xl mt-4 max-w-2xl z-10 relative">
-        Harnessing Innovation to Empower Success, we pave the way for Limitless
-        Possibilities. At InsightCreate, we cultivate an ecosystem where
-        creativity & technology, unite. Together, we build, evolve,
-        and redefine the future.
-      </p>
+  {/* Title */}
+  <h1 className="lg:text-8xl md:text-5xl text-4xl font-bold text-icblack">
+    Elevate with <span className="text-iccardgreen">Excellence</span>
+  </h1>
 
+  {/* Subtitle */}
+  <p className="text-icblack text-sm md:text-xl mt-4 max-w-2xl z-10 relative">
+    Harnessing Innovation to Empower Success, we pave the way for Limitless
+    Possibilities. At InsightCreate, we cultivate an ecosystem where
+    creativity & technology unite. Together, we build, evolve, and redefine the future.
+  </p>
+</div>
 
-    </div>
 
     {/* Contact Form */}
     <div className="bg-iclightdark md:p-10 pt-10 pb-10 w-full flex flex-col items-center text-center">
+        <p className="text-icblack text-4xl font-medium mb-4">Get a Free Consultation</p>
     <form onSubmit={handleSubmit} className="space-y-4">
       {/* Name Field */}
       <div className="relative">
@@ -108,26 +125,33 @@ const Contact = ({ arrow_right, logo, whatsapp, email, call }) => {
   
 
 
-  <p className="text-icblack font-bold text-xl md:text-xl mt-4 max-w-2xl z-10 relative">
+  <p className="text-icblack font-medium text-2xl md:text-2xl mt-4 max-w-2xl z-10 relative">
     OR <br />
      simply want to connect.
   </p>
   
-  <div className="md:flex md:space-x-6 mt-6 text-3xl text-icwhite z-10 relative">
-    <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
-    <img src={email} alt="Insight Create Email" className="h-4 w-4 mr-2" />
-      contact@insightcreate.com
-    </button>
-    <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
-    <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
-      +91 8485846179
-    </button>
-    <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
-    <img src={whatsapp} alt="Insight Create Whatsapp" className="h-4 w-4 mr-2" />
+  <div className="md:flex md:space-x-4 mt-4 text-3xl text-icwhite z-10 relative">
+      {/* Email Button */}
+      <button className={buttonStyle} onClick={() => window.location.href = "mailto:contact@insightcreate.com"}>
+        <img src={email} alt="Insight Create Email" className="h-4 w-4 mr-2" />
+        contact@insightcreate.com
+      </button>
+
+      {/* Call Button */}
+      <a href="tel:+917276626179" className={buttonStyle}>
+        <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
+        +91 7276626179
+      </a>
+
+      {/* WhatsApp Button */}
+      <a href="https://wa.me/917276626179" target="_blank" rel="noopener noreferrer" className={buttonStyle}>
+        <img src={whatsapp} alt="Insight Create WhatsApp" className="h-4 w-4 mr-2" />
         WhatsApp us
-    </button>
+      </a>
+    </div>
   </div>
-  </div>
+  <JoinCreatorTeam join={join} />
+  <Footer logodark={logodark} logo={logo} socialIcons={socialIcons} whatsapp={whatsapp} email={email} call={call} arrow_right={arrow_right} insightcreate={insightcreate} insight={insight} create={create} copy={copy} />
   </>
   );
 };
