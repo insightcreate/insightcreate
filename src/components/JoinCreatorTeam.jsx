@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const JoinCreatorTeam = ({join}) => {
   return (
     <div className="bg-icdark flex items-center bg-white p-6 shadow-md w-full lg:px-40 mx-auto">
@@ -14,9 +16,9 @@ const JoinCreatorTeam = ({join}) => {
         <p className="text-icgrey mt-2 lg:text-2xl text-xl">
           Be a part of something big! Collaborate, innovate, and create with us.
         </p>
-        <button className="mt-4 bg-icblack text-icwhite px-4 py-2 rounded-lg transform hover:scale-110 transition-transform duration-500 cursor-pointer">
+        <Link to={'join'}><button className="mt-4 bg-icblack text-icwhite px-4 py-2 rounded-lg transform hover:scale-110 transition-transform duration-500 cursor-pointer">
           Join Now
-        </button>
+        </button></Link>
       </div>
     </div>
   );

@@ -30,6 +30,7 @@ import Dev from'./assets/social/dev.svg'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from './components/Contact.jsx'
 import About from './components/About.jsx'
+import Join from './components/Join.jsx'
 // import { ShiftingDropDown } from './components/Tabs.jsx'
 // import Nav from './components/Nav.jsx'
 
@@ -47,6 +48,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/" element={<InsightCreate />} />
           <Route path="/contact" element={<Contact join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
           <Route path="/about" element={<About join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
+          <Route path="/join" element={<Join join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
         </Routes>
       </Router>
     </div>

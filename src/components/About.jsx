@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import JoinCreatorTeam from "./JoinCreatorTeam";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
