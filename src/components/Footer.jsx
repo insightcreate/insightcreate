@@ -46,7 +46,7 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
               <h3 className="font-semibold mb-2 text-xl">Terms and Policies</h3>
               <ul className="space-y-2">
                 <li>Terms of Use</li>
-                <li>Privacy Policy</li>
+                <li><Link to={'/policy'}> Privacy Policy</Link></li>
                 {/* <li>Developer Policies</li> */}
               </ul>
             </div>

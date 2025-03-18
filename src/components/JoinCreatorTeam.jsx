@@ -16,7 +16,7 @@ const JoinCreatorTeam = ({join}) => {
         <p className="text-icgrey mt-2 lg:text-2xl text-xl">
           Be a part of something big! Collaborate, innovate, and create with us.
         </p>
-        <Link to={'join'}><button className="mt-4 bg-icblack text-icwhite px-4 py-2 rounded-lg transform hover:scale-110 transition-transform duration-500 cursor-pointer">
+        <Link to={'/join'}><button className="mt-4 bg-icblack text-icwhite px-4 py-2 rounded-lg transform hover:scale-110 transition-transform duration-500 cursor-pointer">
           Join Now
         </button></Link>
       </div>
