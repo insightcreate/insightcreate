@@ -6,7 +6,7 @@ const Header = ({ arrow_right, headerimage }) => {
     // Select all letters and add animation class
     const letters = document.querySelectorAll('.falling-letter');
     letters.forEach((letter, index) => {
-      letter.style.animationDelay = `${index * 0.1}s`; // Delay each character slightly
+      letter.style.animationDelay = `${index * 0.3}s`; // Delay each character slightly
     });
   }, []);
 
@@ -25,7 +25,7 @@ const Header = ({ arrow_right, headerimage }) => {
     <div className="relative flex flex-col items-center text-center lg:py-34 md:py-28 py-4 px-4 bg-iclightdark">
       {/* //  <div className="relative flex flex-col items-center text-center lg:py-48 py-32 px-4 bg-gradient-to-br from-icthemepink via-50% via-icthemeblue to-icyellow"> */}
       {/* Text with Animation */}
-      <h1 className="lg:text-8xl md:text-5xl text-5xl font-bold text-icblack">
+      <h1 className="lg:text-8xl md:text-5xl text-5xl font-bold text-icblack falling-letter">
         {/* {splitText("Empowering Your Vision")} */}
         Empowering Your <span className="text-iccardpink">Vision</span>
       </h1>

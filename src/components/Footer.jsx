@@ -4,7 +4,7 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
     return (
       <footer className="bg-icdark text-icwhite py-8">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
             <div>
                 <div className="flex items-center">
                     {/* <img src={insightcreate} alt="InsightCreate" className="" /> */}
@@ -22,8 +22,9 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
               </div>
             </div>
             <div>
-              <h3 className="font-semibold mb-2 text-xl">Our Solutions</h3>
+              <h3 className="font-semibold mb-2 text-xl">Our Capabilities</h3>
               <ul className="space-y-2">
+                {/* <li>Product Development</li> */}
                 <li>Web Development</li>
                 <li>Mobile Applications</li>
                 <li>Software Development</li>
@@ -39,35 +40,12 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
                 <li><Link to={'/about'}>About us</Link></li>
                 {/* <li>Our mission</li> */}
                 <li><Link to={'/contact'}>Contact us</Link></li>
-                <li>Hire us</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2 text-xl">Terms and Policies</h3>
-              <ul className="space-y-2">
-                <li>Terms of Use</li>
-                <li><Link to={'/policy'}> Privacy Policy</Link></li>
-                {/* <li>Developer Policies</li> */}
+                <li><Link to={'/contact'}>Hire us</Link></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-icthemeblue mt-6 pt-4 flex flex-col md:flex-row justify-between text-xs text-icblack">
-            <div className="lg:flex text-center">
-                <div className="flex text-center">
-                    <img src={copy} alt="Copy right insightcreate" className="h-4 w-4 mr-2" /> 
-                    <span className="lg:text-sm sm:text-xs font-normal text-icgrey mr-1">Copyright 2025 |</span>
-{/*                     <img src={insight} alt="Insight" className="h-3 w-2" />
-                    <span className="lg:text-sm sm:text-xs font-normal text-icblack mr-2">nsight</span>
-                    <img src={create} alt="Create" className="h-3 w-3" />
-                    <span className="lg:text-sm sm:text-x font-normal text-icblack">reate Pvt. Ltd.</span> */}
-                    <img src={logodark} alt="InsightCreate" className="h-5" />
-                    <span className="lg:text-sm sm:text-x font-normal text-icgrey mr-1"> Pvt. Ltd.</span>
-                </div>
-                <div className="text-center">
-                <span className="lg:text-sm sm:text-x font-normal text-icgrey ml-1 ">All rights reserved.</span>
-                </div>
-            </div>
-
+          
+          <div className="border-t border-icthemeblue mt-6 grid grid-cols-1 md:grid-cols-3 justify-between text-xs text-icblack">
 
             <div className="lg:flex lg:space-x-4">
                 <button className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
@@ -79,6 +57,19 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
                 contact@insightcreate.com
                 </button>
             </div>
+
+            <div className="p-4 md:ml-6">
+                <div className="flex text-center">
+                    <img src={copy} alt="Copy right insightcreate" className="h-4 w-4 mr-2" /> 
+                    {/* <img src={logodark} alt="InsightCreate" className="h-5" /> */}
+                    <span className="lg:text-sm sm:text-x font-normal text-icgrey mr-1">Copyright 2025 | InsightCreate Pvt. Ltd.</span>
+                </div>
+            </div>
+
+            <div className="text-center p-4">
+              <Link to={'/policy'}><span className="text-icgrey lg:text-sm sm:text-xs font-normal">Privacy Policy</span></Link>
+            </div>
+
           </div>
         </div>
       </footer>

@@ -14,7 +14,7 @@ const Policy = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soci
       
 
     const buttonStyle =
-        "bg-icblack min-w-60 md:m-0 m-4 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden";
+        "bg-icblack min-w-60 lg:m-0 m-4 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden";
 
     return (
         <>
@@ -163,7 +163,7 @@ const Policy = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soci
                     Let's connect
                 </p>
 
-                <div className="md:flex md:space-x-4 mt-4 text-3xl text-icwhite z-10 relative">
+                <div className="lg:flex lg:space-x-4 mt-4 text-3xl text-icwhite z-10 relative">
                     
                     <Link to={'/contact'} className={buttonStyle} >
                         <img src={arrow_right} alt="Insight Create Contact" className="h-4 w-4 mr-2" />

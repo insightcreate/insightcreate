@@ -25,8 +25,6 @@ export default function Services({ arrow_right, sweb, serpcrm, suiux, smobile}) 
     }
   };
 
-  console.warn(sweb)
-
   const scrollRight = () => {
     if (scrollRef.current) {
       scrollRef.current.scrollBy({ left: 320, behavior: "smooth" });
@@ -46,7 +44,7 @@ export default function Services({ arrow_right, sweb, serpcrm, suiux, smobile}) 
     <div className="bg-icdark text-icwhite py-16 px-6 relative">
       {/* Title & Description */}
       <div className="text-center mb-8 flex flex-col sm:flex-row justify-between items-center md:ml-10">
-        <h2 className="text-5xl font-bold text-left max-w-xl">
+        <h2 className="text-5xl font-bold text-left max-w-xl falling-letter">
           <span className="text-iccardpurple">Unlock </span>
           Your
           <span className="text-iccardyellow"> Business </span>

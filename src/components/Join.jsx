@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import JoinCreatorTeam from "./JoinCreatorTeam";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import JoinTagline from "./JoinTagline";
@@ -38,9 +37,9 @@ const Join = ({ join, arrow_right, logodark, logo, whatsapp, email, call, social
         <>
             <div className="relative flex flex-col items-center text-center lg:py-10 md:py-10 py-6 px-6 bg-iccardpurple">
                 {/* Breadcrumb (Aligned Left) */}
-                <div className="w-full max-w-7xl mx-auto">
-                    <p className="text-icblack text-sm text-left">Home / <span className="font-bold">Join Us</span></p>
-                </div>
+                <div className="w-full max-w-7xl mx-auto m-3">
+          <p className="text-icblack text-sm text-left"><span className="bg-iclightdark p-2 rounded-xl"><Link to={'/'}>Home</Link> / <span className="font-bold">Join Us</span></span></p>
+        </div>
 
                 {/* Title */}
                 <h1 className="lg:text-8xl md:text-5xl text-4xl font-bold text-icblack">
