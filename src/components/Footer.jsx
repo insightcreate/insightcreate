@@ -27,7 +27,7 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
                 {/* <li>Product Development</li> */}
                 <li><Link to={'/servics/web_development'}>Web Development</Link></li>
                 <li><Link to={'/servics/mobile_development'}>Mobile Applications</Link></li>
-                <li><Link to={'/servics/web_development'}>Software Development</Link></li>
+                <li><Link to={'/servics/software_development'}>Software Development</Link></li>
                 <li><Link to={'/servics/erp_crm'}>ERP & CRM Solutions</Link></li>
                 <li><Link to={'/servics/branding_design'}>Branding & Design</Link></li>
                 <li><Link to={'/servics/packaging'}>Packaging Design</Link></li>
