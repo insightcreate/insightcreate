@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = ({ arrow_right, headerimage }) => {
 
@@ -36,16 +37,16 @@ const Header = ({ arrow_right, headerimage }) => {
 
       {/* Icons */}
       <div className="md:flex md:space-x-6 mt-6 text-3xl text-icwhite z-10 relative">
-        <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
+        <Link to={'/contact'} className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
           <img src={arrow_right} alt="Insight Create Arrow Right" className="h-4 w-4 mr-2" />
           Hire us
           <span className="absolute top-0 left-0 w-1 h-1 bg-icwhite rounded-full animate-meteor"></span>
-        </button>
-        <button className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
+        </Link>
+        <Link to={'/contact'} className="bg-icblack min-w-60 m-5 justify-center text-icwhite px-4 py-3 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center relative overflow-hidden">
           <img src={arrow_right} alt="Insight Create Arrow Right" className="h-4 w-4 mr-2" />
           Schedule a call
           <span className="absolute top-0 left-0 w-1 h-1 bg-icwhite rounded-full animate-meteor"></span>
-        </button>
+        </Link>
       </div>
     </div>
     
