@@ -48,11 +48,11 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
           <div className="border-t border-icthemeblue mt-6 grid grid-cols-1 md:grid-cols-3 justify-between text-xs text-icblack">
 
             <div className="lg:flex lg:space-x-4">
-                <button className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+                <a href="tel:+917276626179" className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
                 <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
                 +91 7276626179
-                </button>
-                <button className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+                </a>
+                <button onClick={() => window.location.href = "mailto:contact@insightcreate.com"} className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
                 <img src={email} alt="Insight Create Email" className="h-4 w-4 mr-2" />
                 contact@insightcreate.com
                 </button>

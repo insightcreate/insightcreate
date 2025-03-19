@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SalesCard = ({whatsapp, arrow_right, email, call}) => {
   return (
     // <div className="bg-iccardpurple mx-auto m-10 rounded-3xl p-10 flex flex-col lg:flex-row justify-between items-center w-full max-w-5xl">
@@ -14,22 +16,22 @@ const SalesCard = ({whatsapp, arrow_right, email, call}) => {
 
       {/* Buttons Section */}
       <div className="flex flex-col space-y-2 mt-6 lg:mt-0">
-        <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+        <Link to={'/contact'} className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
               <img src={arrow_right} alt="Insight Create contact" className="h-4 w-4 mr-2" />
               Contact us
-        </button>
-        <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+        </Link>
+        <button onClick={() => window.location.href = "mailto:contact@insightcreate.com"} className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
               <img src={email} alt="Insight Create Email" className="h-4 w-4 mr-2" />
               Email us
         </button>
-        <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+        <a href="https://wa.me/917276626179" target="_blank" rel="noopener noreferrer" className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
               <img src={whatsapp} alt="Insight Create Whatsapp" className="h-4 w-4 mr-2" />
               WhatsApp us
-        </button>
-        <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+        </a>
+        <a href="tel:+917276626179" className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
               <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
               Call us
-        </button>
+        </a>
       </div>
       </div>
     </div>

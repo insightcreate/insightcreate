@@ -67,14 +67,14 @@ const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
 
           {/* Right Buttons for Medium Screens and Above */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+            <a href="https://wa.me/917276626179" target="_blank" rel="noopener noreferrer" className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
               <img src={whatsapp} alt="Insight Create Whatsapp" className="h-4 w-4 mr-2" />
               WhatsApp Us
-            </button>
-            <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+            </a>
+            <Link to={'/contact'} className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
               <img src={arrow_right} alt="Insight Create Arrow Right" className="h-4 w-4 mr-2" />
               Let's Talk
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -86,10 +86,10 @@ const NavBar = ({logodark, logo, whatsapp, arrow_right }) => {
         <Link to={'/about'} className="text-icblack block px-3 py-2 rounded-md text-xl font-normal hover:text-iccardpurple">About Us</Link>
         <Link to={'/contact'} className="text-icblack block px-3 py-2 rounded-md text-xl font-normal hover:text-iccardpurple">Contact Us</Link>
         <div className="flex flex-col space-y-2 mt-4">
-          <button className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+          <a href="https://wa.me/917276626179" target="_blank" rel="noopener noreferrer" className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
             <img src={whatsapp} alt="Insight Create Whatsapp" className="h-4 w-4 mr-2" />
             WhatsApp Us
-          </button>
+          </a>
           <Link to={'/contact'} className="bg-icblack text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
             <img src={arrow_right} alt="Insight Create Arrow Right" className="h-4 w-4 mr-2" />
             Let's Talk
