@@ -32,6 +32,7 @@ import Contact from './components/Contact.jsx'
 import About from './components/About.jsx'
 import Join from './components/Join.jsx'
 import Policy from './components/PolicyPrivacy.jsx'
+import Capabilities from './components/Capabilities.jsx'
 // import { ShiftingDropDown } from './components/Tabs.jsx'
 // import Nav from './components/Nav.jsx'
 
@@ -51,6 +52,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/about" element={<About join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
           <Route path="/join" element={<Join join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
           <Route path="/policy" element={<Policy join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
+          <Route path="/services" element={<Capabilities join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
         </Routes>
       </Router>
     </div>

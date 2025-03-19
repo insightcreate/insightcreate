@@ -50,7 +50,7 @@ export default function Services({ arrow_right, sweb, serpcrm, suiux, smobile}) 
           <span className="text-iccardyellow"> Business </span>
           <span className="text-iccardpink"> Potential </span>
           with Our
-          <span className="text-iccardgreen"> Expertise</span>
+          <span className="text-iccardgreen"> Capabilities</span>
         </h2>
         <p className="text-icgrey text-xl mt-2 text-left max-w-lg">
           Our services are like branches of a tree, each offering a unique set of solutions that grow and evolve with your business needs.

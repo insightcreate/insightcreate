@@ -25,13 +25,13 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
               <h3 className="font-semibold mb-2 text-xl">Our Capabilities</h3>
               <ul className="space-y-2">
                 {/* <li>Product Development</li> */}
-                <li>Web Development</li>
-                <li>Mobile Applications</li>
-                <li>Software Development</li>
-                <li>ERP & CRM Solutions</li>
-                <li>Branding & Design</li>
-                <li>Packaging Design</li>
-                <li>UI/UX Design</li>
+                <li><Link to={'/servics/web_development'}>Web Development</Link></li>
+                <li><Link to={'/servics/mobile_development'}>Mobile Applications</Link></li>
+                <li><Link to={'/servics/web_development'}>Software Development</Link></li>
+                <li><Link to={'/servics/erp_crm'}>ERP & CRM Solutions</Link></li>
+                <li><Link to={'/servics/branding_design'}>Branding & Design</Link></li>
+                <li><Link to={'/servics/packaging'}>Packaging Design</Link></li>
+                <li><Link to={'/servics/uiux'}>UI/UX Design</Link></li>
               </ul>
             </div>
             <div>
