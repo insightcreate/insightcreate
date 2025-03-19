@@ -52,10 +52,10 @@ const Footer = ({logodark, logo, whatsapp, arrow_right, email, call, insightcrea
                 <img src={call} alt="Insight Create Call" className="h-4 w-4 mr-2" />
                 +91 7276626179
                 </a>
-                <button onClick={() => window.location.href = "mailto:contact@insightcreate.com"} className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
+                <a onClick={() => window.location.href = "mailto:contact@insightcreate.com"} className="bg-icblack mt-2 min-w-60 text-icwhite px-4 py-2 rounded-md text-sm font-medium transform hover:scale-110 transition-transform duration-500 cursor-pointer flex items-center">
                 <img src={email} alt="Insight Create Email" className="h-4 w-4 mr-2" />
                 contact@insightcreate.com
-                </button>
+                </a>
             </div>
 
             <div className="p-4 md:ml-6">

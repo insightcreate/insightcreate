@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import InsightCreate from './InsightCreate.jsx'
 import NavBar from './components/NavBar.jsx'
+import { Bounce, ToastContainer, toast } from 'react-toastify';
 
 import join from './assets/join.svg'
 import appLogo from './assets/logo.svg'
@@ -55,6 +56,22 @@ createRoot(document.getElementById('root')).render(
           <Route path="/services" element={<Capabilities join={join} logodark={logodark} arrow_right={arrow_right} logo={appLogo} whatsapp={whatsapp} email={email} call={call} socialIcons={socialIcons} insightcreate={insightcreate} insight={insight} create={create} copy={copy}/> } />
         </Routes>
       </Router>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+        />
     </div>
   </StrictMode>,
 )
+
+
