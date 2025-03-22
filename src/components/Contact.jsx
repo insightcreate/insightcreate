@@ -39,7 +39,6 @@ const Contact = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soc
       }
   
       const result = await response.json();
-      // alert(result.message || "Thank you for connecting with us!");
       setFormData({ name: "", email: "", phone: "", message: "" });
       toast(result.message || "Thank you for connecting with us!");
     } catch (error) {
@@ -86,7 +85,6 @@ const Contact = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soc
               onChange={handleChange}
               className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
               placeholder="Your Name"
-              required
             />
           </div>
 
@@ -98,7 +96,6 @@ const Contact = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soc
               onChange={handleChange}
               className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
               placeholder="Your Email"
-              required
             />
           </div>
 
@@ -110,7 +107,6 @@ const Contact = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soc
               onChange={handleChange}
               className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
               placeholder="Your Phone"
-              required
             />
           </div>
 
@@ -122,7 +118,6 @@ const Contact = ({ join, arrow_right, logodark, logo, whatsapp, email, call, soc
               rows="4"
               className="peer w-full md:min-w-96 min-w-72 p-4 border rounded-md focus:outline-none focus:ring-1 focus:ring-icblack placeholder-transparent"
               placeholder="Your Message"
-              required
             />
           </div>
 
